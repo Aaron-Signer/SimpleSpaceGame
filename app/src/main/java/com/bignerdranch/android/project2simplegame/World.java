@@ -20,9 +20,9 @@ class World {
 
     public World()
     {
-       player = new PlayerSprite(new Vec2d(500,500));
+        sprites = new ArrayList<>();
+       player = new PlayerSprite(new Vec2d(0,0));
        sprites.add(player);
-
     }
 
     public void tick(double dt) {

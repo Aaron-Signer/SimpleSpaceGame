@@ -17,7 +17,17 @@ public class PlayerSprite extends Sprite {
 
     public PlayerSprite(Vec2d v) {
         super(v);
+        loadBitmaps();
     }
+
+    private void loadBitmaps() {
+        BitmapRepo r = BitmapRepo.getInstance();
+        BitmapSequence s = new BitmapSequence();
+        s.addImage(r.getImage(R.drawable.betterguy1), 0.1);
+        setBitmaps(s);
+
+    }
+
 
     @Override
     public void tick(double dt)
@@ -35,17 +45,17 @@ public class PlayerSprite extends Sprite {
         angle = e.angle;
     }
 
-    @Override
-    public void draw(Canvas c)
-    {
-        Paint p = new Paint();
-        p.setColor(Color.BLUE);
-        c.drawLine((float)getPosition().getX(),
-                (float)getPosition().getY(),
-                (float)(getPosition().getX()+100*Math.cos(Math.toRadians(angle))),
-                (float)( getPosition().getY()-100*Math.sin(Math.toRadians(angle))),
-                p);
-    }
+//    @Override
+//    public void draw(Canvas c)
+//    {
+//        Paint p = new Paint();
+//        p.setColor(Color.BLUE);
+//        c.drawLine((float)getPosition().getX(),
+//                (float)getPosition().getY(),
+//                (float)(getPosition().getX()+100*Math.cos(Math.toRadians(angle))),
+//                (float)( getPosition().getY()-100*Math.sin(Math.toRadians(angle))),
+//                p);
+//    }
 
     @Override
     public boolean isActive() {
