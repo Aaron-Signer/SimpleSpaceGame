@@ -12,6 +12,8 @@ import io.github.controlwear.virtual.joystick.android.JoystickView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // I hate this project
+
     private TextureView textureView;
     private Thread renderLoopThread;
     private int angle;
