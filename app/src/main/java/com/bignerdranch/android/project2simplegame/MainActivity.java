@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         BitmapRepo.getInstance().setContext(this);
         textureView = findViewById(R.id.texture_view);
         textureView.setSurfaceTextureListener(textureListener);

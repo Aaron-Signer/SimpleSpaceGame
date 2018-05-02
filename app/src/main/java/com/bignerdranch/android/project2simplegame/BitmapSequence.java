@@ -33,6 +33,11 @@ public class BitmapSequence {
         return bitmaps.get(current);
     }
 
+    public Bitmap getCurrentBitmap()
+    {
+        return getCurrent().bitmap;
+    }
+
     public void nextBitmap() {
         current = (current + 1) % bitmaps.size();
         timeShowingCurrent = 0;

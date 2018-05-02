@@ -21,6 +21,11 @@ public abstract class Sprite {
         bitmaps = b;
     }
 
+    public BitmapSequence getBitmaps()
+    {
+        return bitmaps;
+    }
+
     public void setPosition(Vec2d p) {
         position = p;
     }

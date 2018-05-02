@@ -6,15 +6,15 @@
     <TextureView
         android:id="@+id/texture_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom|"/>
+        android:layout_height="match_parent" />
 
     <io.github.controlwear.virtual.joystick.android.JoystickView
         xmlns:custom="http://schemas.android.com/apk/res-auto"
         android:id="@+id/joystickView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         custom:JV_fixedCenter="false"
-        android:layout_weight="1"/>
+        android:layout_gravity="bottom|left"
+        custom:JV_autoReCenterButton="false"/>
 
 </FrameLayout>

@@ -52,22 +52,24 @@ class World {
     }
 
     public void draw(Canvas c) {
-//        Bitmap bg = BitmapRepo.getInstance().getImage(R.drawable.background);
+//        Bitmap bg = BitmapRepo.getInstance().getImage(R.drawable.universebackground);
        // Rect bG = new Rect(100,100,200,1000);
         Paint p = new Paint();
         p.setColor(Color.WHITE);
         p.setStyle(Paint.Style.FILL);
         c.drawRect(0,0,c.getWidth(),c.getHeight(),p);
-       p.setColor(Color.RED);
+//       p.setColor(Color.RED);
 //        c.rotate(touchedX,550, 550);
 //        c.drawRect(500, 500, 600, 600, p);
 //        c.rotate(-touchedX, 550, 550);
 //        c.drawRect(1000, 500, 1100, 600, p);
 
-        p.setTextSize(100);
+//        p.setTextSize(100);
 //        c.drawText(Float.toString(touchedX) + " " + Float.toString(touchedY), 100, 100, p);
 //        c.drawText(Float.toString(timeD), 100, 100, p);
-        c.drawText(Integer.toString(hist), 100, 100, p);
+//        c.drawText(Integer.toString(hist), 100, 100, p);
+//        c.drawBitmap(bg, 0, 0,  null);
+
         for(Sprite s: sprites)
             s.draw(c);
 
