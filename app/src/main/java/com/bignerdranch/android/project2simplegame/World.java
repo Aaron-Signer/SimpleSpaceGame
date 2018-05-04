@@ -21,8 +21,8 @@ class World {
     public World()
     {
         sprites = new ArrayList<>();
-       player = new PlayerSprite(new Vec2d(0,0));
-       sprites.add(player);
+        player = new PlayerSprite(new Vec2d(0,0));
+        sprites.add(player);
     }
 
     public void tick(double dt) {
